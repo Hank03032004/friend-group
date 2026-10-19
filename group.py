@@ -28,3 +28,9 @@ my_group ={
             {"name": "John", "relationship": "cousin"}, {"name": "Zalika", "relationship": "landlord"}]
             }
 }
+     def get_connections(name):
+        """Return a list of connections for the given name."""
+        if name in my_group:
+            return my_group[name]["connections"]
+        else:
+            return []
